@@ -3,9 +3,12 @@
     --card-bg: #121212;
     --text-color: #ffffff;
     --text-muted: #a0a0a0;
-    --primary: #00ff41; /* Hacker Green / Matrix Green */
-    --secondary: #9d00ff; /* Neon Purple */
-    --accent: #ff0055; /* Hot Pink */
+    --primary: #00ff41;
+    /* Hacker Green / Matrix Green */
+    --secondary: #9d00ff;
+    /* Neon Purple */
+    --accent: #ff0055;
+    /* Hot Pink */
     --font-main: 'Outfit', sans-serif;
     --border-radius: 12px;
 }
@@ -129,7 +132,9 @@ ul {
 
 /* Hero */
 .hero {
-    height: 100vh;
+    min-height: 100dvh;
+    padding-top: 80px;
+    /* Account for fixed header */
     display: flex;
     align-items: center;
     position: relative;
@@ -188,21 +193,55 @@ ul {
 }
 
 @keyframes glitch-anim {
-    0% { clip: rect(15px, 9999px, 86px, 0); }
-    20% { clip: rect(4px, 9999px, 12px, 0); }
-    40% { clip: rect(55px, 9999px, 12px, 0); }
-    60% { clip: rect(2px, 9999px, 66px, 0); }
-    80% { clip: rect(98px, 9999px, 2px, 0); }
-    100% { clip: rect(54px, 9999px, 23px, 0); }
+    0% {
+        clip: rect(15px, 9999px, 86px, 0);
+    }
+
+    20% {
+        clip: rect(4px, 9999px, 12px, 0);
+    }
+
+    40% {
+        clip: rect(55px, 9999px, 12px, 0);
+    }
+
+    60% {
+        clip: rect(2px, 9999px, 66px, 0);
+    }
+
+    80% {
+        clip: rect(98px, 9999px, 2px, 0);
+    }
+
+    100% {
+        clip: rect(54px, 9999px, 23px, 0);
+    }
 }
 
 @keyframes glitch-anim2 {
-    0% { clip: rect(65px, 9999px, 100px, 0); }
-    20% { clip: rect(12px, 9999px, 5px, 0); }
-    40% { clip: rect(78px, 9999px, 34px, 0); }
-    60% { clip: rect(4px, 9999px, 22px, 0); }
-    80% { clip: rect(32px, 9999px, 98px, 0); }
-    100% { clip: rect(89px, 9999px, 54px, 0); }
+    0% {
+        clip: rect(65px, 9999px, 100px, 0);
+    }
+
+    20% {
+        clip: rect(12px, 9999px, 5px, 0);
+    }
+
+    40% {
+        clip: rect(78px, 9999px, 34px, 0);
+    }
+
+    60% {
+        clip: rect(4px, 9999px, 22px, 0);
+    }
+
+    80% {
+        clip: rect(32px, 9999px, 98px, 0);
+    }
+
+    100% {
+        clip: rect(89px, 9999px, 54px, 0);
+    }
 }
 
 /* Services */
@@ -215,7 +254,7 @@ ul {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -337,16 +376,30 @@ ul {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
     .nav {
         position: fixed;
         top: 80px;
         left: 0;
         width: 100%;
         background: var(--card-bg);
-        padding: 40px;
+        padding: 40px 20px;
         transform: translateY(-150%);
         transition: 0.3s;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        height: calc(100vh - 80px);
+        /* Full height menu */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
     }
 
     .nav.active {
@@ -356,19 +409,62 @@ ul {
     .nav-list {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .nav-list a {
+        font-size: 1.5rem;
+        /* Larger touch targets */
+        display: block;
+        padding: 10px;
     }
 
     .mobile-toggle {
         display: flex;
+        padding: 10px;
+        /* Larger touch area */
+        margin-right: -10px;
     }
 
     .hero-title {
         font-size: 3rem;
+        line-height: 1.1;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        padding: 30px 20px;
     }
 
     .footer-content {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    /* Prevent iOS zoom on inputs */
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
     }
 }
