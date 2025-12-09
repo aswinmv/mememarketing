@@ -68,18 +68,154 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2025 Sannihara. All rights reserved.</p>
-            <div class="socials">
-                <!-- Social links can be added here -->
+        <section class="section logos">
+            <div class="container">
+                <div class="logo-grid">
+                    <img src="https://placehold.co/200x60/ffffff/555555?text=GOOGLE" alt="Client Logo">
+                    <img src="https://placehold.co/200x60/ffffff/555555?text=SPOTIFY" alt="Client Logo">
+                    <img src="https://placehold.co/200x60/ffffff/555555?text=AIRBNB" alt="Client Logo">
+                    <img src="https://placehold.co/200x60/ffffff/555555?text=STRIPE" alt="Client Logo">
+                    <img src="https://placehold.co/200x60/ffffff/555555?text=NOTION" alt="Client Logo">
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <script src="script.js"></script>
+        <section id="works" class="section works">
+            <div class="container">
+                <h2 class="section-title">Selected Works</h2>
+                <div class="works-grid">
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="https://placehold.co/600x400/111111/FFFFFF?text=Project+Alpha"
+                                alt="Project Alpha">
+                        </div>
+                        <div class="work-info">
+                            <h3>Neo-Bank Launch</h3>
+                            <p>Brand Film / 3D Animation</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="https://placehold.co/600x400/F4C745/111111?text=Project+Beta" alt="Project Beta">
+                        </div>
+                        <div class="work-info">
+                            <h3>Tech Summit 2025</h3>
+                            <p>Event Coverage / Recap</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Project+Gamma"
+                                alt="Project Gamma">
+                        </div>
+                        <div class="work-info">
+                            <h3>SaaS Explainer</h3>
+                            <p>Motion Graphics</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-image">
+                            <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Project+Delta"
+                                alt="Project Delta">
+                        </div>
+                        <div class="work-info">
+                            <h3>Lifestyle App</h3>
+                            <p>Live Action Commercial</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">We speak fluent
+                            internet.</h2>
+                        <p>Sannihara is a new-age production agency built for the fast-paced world of tech. We don't
+                            just make "videos"—we craft visual assets that convert, engage, and explain.</p>
+                        <p>From complex SaaS explainers to high-energy hype reels, our team understands distinct visual
+                            languages needed for different platforms.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <h4>50+</h4>
+                                <p>Projects Shipped</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>10M+</h4>
+                                <p>Views Generated</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://placehold.co/600x600/f0f0f0/111111?text=Agency+Life" alt="Behind the scenes"
+                            style="width: 100%; border-radius: 24px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="learn" class="section services">
+            <div class="container">
+                <h2 class="section-title">Our Expertise</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <span class="service-icon">✨</span>
+                        <h3>Motion Design</h3>
+                        <p>Turn complex UI/UX interactions into buttery smooth animations that explain your product in
+                            seconds.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">🎬</span>
+                        <h3>Commercials</h3>
+                        <p>High-end live action productions for TV and Digital that give your brand a premium feel.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">📱</span>
+                        <h3>Social Content</h3>
+                        <p>Vertical video content optimized for TikTok, Reels, and Shorts to drive organic reach.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container contact-container">
+                <h2 class="section-title">Ready to create?</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 40px;">Tell us about your project
+                    or just say hi.</p>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell us what you're building..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-black" style="width: 100%;">Send Message</button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-content">
+                <p>&copy; 2025 Sannihara. All rights reserved.</p>
+                <div class="socials">
+                    <!-- Social links can be added here -->
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
