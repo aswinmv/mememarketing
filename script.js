@@ -45,28 +45,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Contact Form Handling
     const contactForm = document.getElementById('contactForm');
-    const formMessage = document.getElementById('formMessage');
+    if (contactForm) {
+        const formMessage = document.getElementById('formMessage');
 
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
 
-        // Simulate sending
-        const originalBtnText = contactForm.querySelector('button').innerText;
-        contactForm.querySelector('button').innerText = 'SENDING...';
+            // Simulate sending
+            const originalBtnText = contactForm.querySelector('button').innerText;
+            contactForm.querySelector('button').innerText = 'SENDING...';
 
-        setTimeout(() => {
-            contactForm.reset();
-            formMessage.textContent = "MESSAGE SENT! WE'LL BE IN TOUCH 🚀";
-            formMessage.className = "form-message success-message";
-            contactForm.querySelector('button').innerText = originalBtnText;
-
-            // Clear message after 3 seconds
             setTimeout(() => {
-                formMessage.textContent = '';
-                formMessage.className = "form-message";
-            }, 5000);
-        }, 1500);
-    });
+                contactForm.reset();
+                formMessage.textContent = "MESSAGE SENT! WE'LL BE IN TOUCH 🚀";
+                formMessage.className = "form-message success-message";
+                contactForm.querySelector('button').innerText = originalBtnText;
+
+                // Clear message after 3 seconds
+                setTimeout(() => {
+                    formMessage.textContent = '';
+                    formMessage.className = "form-message";
+                }, 5000);
+            }, 1500);
+        });
+    }
 
     // Intersection Observer for Fade-in Animations
     const observerOptions = {
