@@ -4,31 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sannihara | Creative Video Production</title>
-    <meta name="description" content="Creative Video Production Agency for Tech.">
+    <title>Penziloid Studio LLP | Video Production Agency</title>
+    <meta name="description"
+        content="Creative video production agency specialized in Tech. Explainer videos, marketing videos, and more.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23F4C745%22 /><path d=%22M30 50 L45 65 L75 35%22 stroke=%22black%22 stroke-width=%2210%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22 /></svg>">
 </head>
 
 <body>
     <header class="header">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <div class="logo-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="24" height="24" rx="4" fill="#F4C745" />
-                        <path d="M7 12L10 15L17 8" stroke="black" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <span>Sannihara</span>
-            </a>
+        <div class="container header-container">
+            <a href="#" class="logo">Penziloid</a>
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
@@ -36,186 +25,257 @@
                     <li><a href="#about">About us</a></li>
                     <li><a href="#learn">Learn</a></li>
                 </ul>
+                <a href="#contact" class="btn btn-primary">Contact us</a>
             </nav>
-            <div class="header-actions">
-                <a href="#contact" class="btn btn-black">Contact us</a>
-                <button class="mobile-toggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Creative Video Production <br>Agency for Tech.</h1>
-                    <p class="hero-subtitle">In search of an in-house motion team or seeking a trusted video production
-                        partner? You have come to the right place. Just leave us a note.</p>
-                    <div class="hero-buttons">
-                        <a href="#pricing" class="btn btn-yellow">Get pricing</a>
-                        <a href="#portfolio" class="link-arrow">Go to our portfolio <span
-                                class="arrow-icon">→</span></a>
-                    </div>
+            <div class="hero-bg">
+                <div class="video-overlay"
+                    style="background: radial-gradient(circle at center, rgba(59, 130, 246, 0.2) 0%, #050505 70%);">
                 </div>
-                <div class="hero-image">
-                    <!-- Placeholder for the colorful illustration -->
-                    <img src="https://placehold.co/800x600/9b59b6/ffffff?text=Creative+Team+Illustration"
-                        alt="Creative Team Illustration">
+            </div>
+            <div class="container hero-content">
+                <h1 class="hero-title">Meme Video Marketing to <br> <span style="color: #3b82f6;">Humanize</span> Your
+                    SaaS.</h1>
+                <p class="hero-subtitle">Stop boring your leads with generic corporate videos. We turn your brand into a
+                    cultural moment with viral meme marketing.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get Viral Strategy</a>
+                    <a href="#works" class="btn btn-secondary">See Memes</a>
                 </div>
             </div>
         </section>
-        <section class="section logos">
+
+        <!-- Trusted By Section -->
+        <section class="trusted-by">
             <div class="container">
+                <p class="section-label">Trusted by cool SaaS companies</p>
                 <div class="logo-grid">
-                    <img src="https://placehold.co/200x60/ffffff/555555?text=GOOGLE" alt="Client Logo">
-                    <img src="https://placehold.co/200x60/ffffff/555555?text=SPOTIFY" alt="Client Logo">
-                    <img src="https://placehold.co/200x60/ffffff/555555?text=AIRBNB" alt="Client Logo">
-                    <img src="https://placehold.co/200x60/ffffff/555555?text=STRIPE" alt="Client Logo">
-                    <img src="https://placehold.co/200x60/ffffff/555555?text=NOTION" alt="Client Logo">
+                    <div class="logo-item">TechFlow</div>
+                    <div class="logo-item">SaaSify</div>
+                    <div class="logo-item">CloudScale</div>
+                    <div class="logo-item">DataMeme</div>
+                    <div class="logo-item">DevOps.io</div>
                 </div>
             </div>
         </section>
 
-        <section id="works" class="section works">
+        <!-- Value Proposition -->
+        <section class="value-prop">
             <div class="container">
-                <h2 class="section-title">Selected Works</h2>
+                <h2 class="section-title text-center">No one shares "Corporate Explainers"</h2>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <div class="icon-box">🚀</div>
+                        <h3>Instant Relatability</h3>
+                        <p>We speak the language of the internet. Memes build instant trust and connection with your
+                            devs and B2B audience.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon-box">🧠</div>
+                        <h3>High Retention</h3>
+                        <p>Humor hacks the brain. People remember jokes way longer than feature lists.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon-box">🔥</div>
+                        <h3>Viral Potential</h3>
+                        <p>Ads get skipped. Memes get shared. Turn your marketing spend into organic growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process" id="process">
+            <div class="container">
+                <h2 class="section-title text-center">From Cringe to Binge-Worthy</h2>
+                <div class="process-steps">
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="step-content">
+                            <span class="step-number">01</span>
+                            <h3>Trend Surfing</h3>
+                            <p>We scour Reddit, X (Twitter), and TikTok to find the hottest rising formats relevant to
+                                your niche.</p>
+                        </div>
+                        <div class="step-image"
+                            style="background: linear-gradient(135deg, #1e1e24, #050505); display: flex; align-items: center; justify-content: center;">
+                            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-step reverse">
+                        <div class="step-content">
+                            <span class="step-number">02</span>
+                            <h3>Meme-ification</h3>
+                            <p>We take your "boring" B2B value prop and translate it into hilarious, relatable
+                                situations.</p>
+                        </div>
+                        <div class="step-image"
+                            style="background: linear-gradient(135deg, #1e1e24, #050505); display: flex; align-items: center; justify-content: center;">
+                            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                <line x1="9" y1="9" x2="9.01" y2="9" />
+                                <line x1="15" y1="9" x2="15.01" y2="9" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="step-content">
+                            <span class="step-number">03</span>
+                            <h3>Production & Edit</h3>
+                            <p>High-speed editing with the perfect sound effects, cuts, and visual gags.</p>
+                        </div>
+                        <div class="step-image"
+                            style="background: linear-gradient(135deg, #1e1e24, #050505); display: flex; align-items: center; justify-content: center;">
+                            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="23 7 16 12 23 17 23 7" />
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="process-step reverse">
+                        <div class="step-content">
+                            <span class="step-number">04</span>
+                            <h3>Viral Launch</h3>
+                            <p>We help you distribute the assets to maximize engagement and "Haha, true" comments.</p>
+                        </div>
+                        <div class="step-image"
+                            style="background: linear-gradient(135deg, #1e1e24, #050505); display: flex; align-items: center; justify-content: center;">
+                            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M2 12h20" />
+                                <path d="m5 9-3 3 3 3" />
+                                <path d="m19 9 3 3-3 3" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="works">
+            <div class="container">
+                <h2 class="section-title">Fresh from the Lab</h2>
                 <div class="works-grid">
-                    <div class="work-card">
-                        <div class="work-image">
-                            <img src="https://placehold.co/600x400/111111/FFFFFF?text=Project+Alpha"
-                                alt="Project Alpha">
-                        </div>
-                        <div class="work-info">
-                            <h3>Neo-Bank Launch</h3>
-                            <p>Brand Film / 3D Animation</p>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-image">
-                            <img src="https://placehold.co/600x400/F4C745/111111?text=Project+Beta" alt="Project Beta">
-                        </div>
-                        <div class="work-info">
-                            <h3>Tech Summit 2025</h3>
-                            <p>Event Coverage / Recap</p>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-image">
-                            <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Project+Gamma"
-                                alt="Project Gamma">
-                        </div>
-                        <div class="work-info">
-                            <h3>SaaS Explainer</h3>
-                            <p>Motion Graphics</p>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-image">
-                            <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Project+Delta"
-                                alt="Project Delta">
-                        </div>
-                        <div class="work-info">
-                            <h3>Lifestyle App</h3>
-                            <p>Live Action Commercial</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section about">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">We speak fluent
-                            internet.</h2>
-                        <p>Sannihara is a new-age production agency built for the fast-paced world of tech. We don't
-                            just make "videos"—we craft visual assets that convert, engage, and explain.</p>
-                        <p>From complex SaaS explainers to high-energy hype reels, our team understands distinct visual
-                            languages needed for different platforms.</p>
-                        <div class="stats">
-                            <div class="stat-item">
-                                <h4>50+</h4>
-                                <p>Projects Shipped</p>
-                            </div>
-                            <div class="stat-item">
-                                <h4>10M+</h4>
-                                <p>Views Generated</p>
+                    <div class="work-item">
+                        <div class="work-thumbnail"
+                            style="background: #1a1a1a; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <div style="text-align: center; opacity: 0.7;">
+                                <span style="font-size: 3rem;">😂</span>
+                                <p style="margin-top: 10px; font-weight: bold;">POV: Sales Team</p>
                             </div>
                         </div>
+                        <div class="work-info">
+                            <h3>Sales vs Devs Meme</h3>
+                            <p>Viral Video for CRM SaaS</p>
+                        </div>
                     </div>
-                    <div class="about-image">
-                        <img src="https://placehold.co/600x600/f0f0f0/111111?text=Agency+Life" alt="Behind the scenes"
-                            style="width: 100%; border-radius: 24px;">
+                    <div class="work-item">
+                        <div class="work-thumbnail"
+                            style="background: #1a1a1a; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <div style="text-align: center; opacity: 0.7;">
+                                <span style="font-size: 3rem;">📉</span>
+                                <p style="margin-top: 10px; font-weight: bold;">When Server Down</p>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h3>Downtime Humor</h3>
+                            <p>Engagement Post for Cloud Provider</p>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-thumbnail"
+                            style="background: #1a1a1a; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <div style="text-align: center; opacity: 0.7;">
+                                <span style="font-size: 3rem;">🤡</span>
+                                <p style="margin-top: 10px; font-weight: bold;">Client Requests</p>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h3>Agency Life Skit</h3>
+                            <p>Short for Project Mgmt Tool</p>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-thumbnail"
+                            style="background: #1a1a1a; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <div style="text-align: center; opacity: 0.7;">
+                                <span style="font-size: 3rem;">🐛</span>
+                                <p style="margin-top: 10px; font-weight: bold;">It's a Feature</p>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <h3>Bug Fix Celebration</h3>
+                            <p>Reel for Dev Tool</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="learn" class="section services">
+        <!-- CTA Section -->
+        <section class="cta-section">
             <div class="container">
-                <h2 class="section-title">Our Expertise</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <span class="service-icon">✨</span>
-                        <h3>Motion Design</h3>
-                        <p>Turn complex UI/UX interactions into buttery smooth animations that explain your product in
-                            seconds.</p>
-                    </div>
-                    <div class="service-card">
-                        <span class="service-icon">🎬</span>
-                        <h3>Commercials</h3>
-                        <p>High-end live action productions for TV and Digital that give your brand a premium feel.</p>
-                    </div>
-                    <div class="service-card">
-                        <span class="service-icon">📱</span>
-                        <h3>Social Content</h3>
-                        <p>Vertical video content optimized for TikTok, Reels, and Shorts to drive organic reach.</p>
-                    </div>
-                </div>
+                <h2>Ready to put your marketing into motion?</h2>
+                <p>Let's create something amazing together.</p>
+                <a href="#contact" class="btn btn-primary btn-large">Let's work together</a>
             </div>
         </section>
+    </main>
 
-        <section id="contact" class="section contact">
-            <div class="container contact-container">
-                <h2 class="section-title">Ready to create?</h2>
-                <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 40px;">Tell us about your project
-                    or just say hi.</p>
-
-                <form id="contactForm" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="john@company.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" placeholder="Tell us what you're building..."
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-black" style="width: 100%;">Send Message</button>
-                    <p class="form-message" id="formMessage"></p>
-                </form>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Penziloid</h3>
+                <p>Creative video production agency.</p>
             </div>
-        </section>
-
-        <footer class="footer">
-            <div class="container footer-content">
-                <p>&copy; 2025 Sannihara. All rights reserved.</p>
-                <div class="socials">
-                    <!-- Social links can be added here -->
-                </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#process">Process</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="footer-col">
+                <h4>Socials</h4>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>hello@penziloid.com</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2024 Penziloid Studio LLP. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
